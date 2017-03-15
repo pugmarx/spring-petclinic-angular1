@@ -34,6 +34,11 @@ public interface ClinicService {
     Collection<PetType> findPetTypes();
 
     Owner findOwnerById(int id);
+    
+    /**
+     * Test method to find all owners
+     */
+    Collection<Owner> findAllOwners();
 
     Pet findPetById(int id);
 

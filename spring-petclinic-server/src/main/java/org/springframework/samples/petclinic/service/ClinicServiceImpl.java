@@ -66,6 +66,11 @@ public class ClinicServiceImpl implements ClinicService {
     public Collection<Owner> findAll() throws DataAccessException {
         return ownerRepository.findAll();
     }
+    
+    @Transactional(readOnly = true)
+    public Collection<Owner> findAllOwners() throws DataAccessException {
+        return ownerRepository.findAll();
+    }
 
     @Override
     @Transactional
